@@ -1,4 +1,6 @@
-"""btc-race bot: a small dip-buy probe plus a full-size breakout.
+"""make.fun BTC race (btc-race) entry: dip-buy probe sized so a full round
+trip costs ~12 bps (vs ~26 bps for a full-size trade), making a 0.2% bounce
+profitable.
 
 The competition is long only. A full-size round trip costs about 26 bps of
 slippage/impact, so the bot runs two gears:
@@ -177,6 +179,7 @@ class Bot:
             return self.probe_exit_order(state, px, held)
         if held:
             return []
+        # entry waits for the bar that is already bouncing (up_bar), not the dip bar itself
         return self.probe_entry_order(state, px)
 
 
