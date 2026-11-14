@@ -1,0 +1,13 @@
+{
+ "probe_usdc": 200,
+ "drop_bps": 100,
+ "lookback": 15,
+ "take_bps": 12,
+ "stop_bps": 50,
+ "max_hold": 60,
+ "use_main": 0,
+ "fast": 12,
+ "slow": 48,
+ "brk_lookback": 120,
+ "exit_lookback": 20
+}
